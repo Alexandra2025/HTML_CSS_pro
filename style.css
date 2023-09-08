@@ -303,6 +303,8 @@ a {
 }
 
 .product {
+  flex-grow: 1;
+  margin: 8px;
   display: flex;
   flex-direction: column;
   width: 360px;
@@ -467,7 +469,7 @@ a {
   background-color: #f16d7f;
   padding-left: 20px;
 }
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .footer .center {
     padding-left: calc(50% - 367px);
     padding-right: calc(50% - 367px);
