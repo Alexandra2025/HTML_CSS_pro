@@ -7,11 +7,6 @@ body {
   font-family: "latoblack";
 }
 
-.header {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 summary {
   display: block;
 }
@@ -30,6 +25,7 @@ a {
 }
 
 .header {
+  display: flex;
   justify-content: space-between;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -38,17 +34,18 @@ a {
 .header__left {
   display: flex;
   align-items: center;
+  margin: 18px;
   gap: 41px;
 }
-.header_right {
+.header__right {
   display: flex;
   align-items: center;
+  margin: 18px;
   gap: 25px;
 }
 
 .top-head {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 16px;
   display: flex;
   justify-content: space-between;
   background-color: #f8f3f4;
@@ -470,13 +467,6 @@ a {
   padding-left: 20px;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  .footer .center {
-    padding-left: calc(50% - 367px);
-    padding-right: calc(50% - 367px);
-  }
-  .footer .top_heading {
-    font-size: 44px;
-  }
   .footer .img_top {
     width: 386px;
     height: 368px;

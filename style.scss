@@ -10,11 +10,6 @@ body {
   font-family: "latoblack";
 }
 
-%flex {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 summary {
   display: block;
 }
@@ -33,26 +28,27 @@ a {
 }
 
 .header {
+  display: flex;
   justify-content: space-between;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: $colorBackDark;
-  @extend %flex;
   &__left {
     display: flex;
     align-items: center;
+    margin: 18px;
     gap: 41px;
   }
-  &_right {
+  &__right {
     display: flex;
     align-items: center;
+    margin: 18px;
     gap: 25px;
   }
 }
 
 .top-head {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 16px;
   display: flex;
   justify-content: space-between;
   background-color: $colorBackLight;
@@ -458,15 +454,6 @@ a {
     }
   }
   @media (min-width: 768px) and (max-width: 1024px) {
-    .center {
-      padding-left: calc(50% - 367px);
-      padding-right: calc(50% - 367px);
-    }
-
-    .top_heading {
-      font-size: 44px;
-    }
-
     .img_top {
       width: 386px;
       height: 368px;
